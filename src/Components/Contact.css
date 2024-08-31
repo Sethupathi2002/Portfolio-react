@@ -6,13 +6,10 @@
 }
 
 .contact-form {
-<<<<<<< HEAD
     background: transparent;
     backdrop-filter: blur(10px);
-=======
-    background: rgba(219, 218, 218, 0.708);
+    background: transparent;
     backdrop-filter: blur(60px);
->>>>>>> e42b32895e1f66886094b150ed43177407b62f4e
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     padding: 20px;
@@ -23,11 +20,9 @@
 }
 
 .contact-form:hover {
-<<<<<<< HEAD
-    backdrop-filter: blur(40px);
-=======
->>>>>>> e42b32895e1f66886094b150ed43177407b62f4e
+    backdrop-filter: blur(50px);
     box-shadow: 8px 8px 10px rgba(0, 1, 1, 0.9);
+    transition: 0.3s ease-in-out;
 }
 
 .contact-form input,
@@ -40,10 +35,7 @@
     font-size: 16px;
     color: #333;
     width: 100%;
-<<<<<<< HEAD
     cursor: text;
-=======
->>>>>>> e42b32895e1f66886094b150ed43177407b62f4e
 }
 
 .contact-form input::placeholder,
