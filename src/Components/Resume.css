@@ -1,11 +1,8 @@
-<<<<<<< HEAD
 .resume-body {
     background-color: transparent;
     backdrop-filter: blur(10px);
 }
 
-=======
->>>>>>> e42b32895e1f66886094b150ed43177407b62f4e
 .resume-action-buttons {
     display: flex;
     justify-content: center;
@@ -21,21 +18,15 @@
         5px 5px 10px rgba(0, 0, 0, 0.2),
         -5px -5px 10px rgba(255, 255, 255, 0.8);
     border-radius: 10px;
-<<<<<<< HEAD
-=======
     background: linear-gradient(to right, black, grey);
->>>>>>> e42b32895e1f66886094b150ed43177407b62f4e
 }
 
 .resume-action-buttons:hover {
     box-shadow:
         8px 8px 16px rgba(0, 0, 0, 0.2),
         -8px -8px 16px rgba(255, 255, 255, 0.8);
-<<<<<<< HEAD
     transition: 0.2s ease-in;
 
-=======
->>>>>>> e42b32895e1f66886094b150ed43177407b62f4e
 }
 
 .resume-view-button,
@@ -51,17 +42,11 @@
 .resume-download-button:hover {
     background-color: #FC6119;
     color: white;
-<<<<<<< HEAD
     transition: 0.3s ease-in;
-=======
->>>>>>> e42b32895e1f66886094b150ed43177407b62f4e
 }
 
 .resume-view-button:hover {
     background-color: #FC6119;
     color: white;
-<<<<<<< HEAD
     transition: 0.3s ease-in;
-=======
->>>>>>> e42b32895e1f66886094b150ed43177407b62f4e
 }
