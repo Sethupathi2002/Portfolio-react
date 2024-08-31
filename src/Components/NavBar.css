@@ -1,0 +1,29 @@
+.nav-bar-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-bar-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-bar-list {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    cursor: pointer;
+    font-weight: bold;
+    flex: 1;
+}
+
+.nav-bar-list li {
+    margin: 0 10px;
+    color: white;
+}
+
+.nav-bar-list li:hover {
+    color: #FC6119;
+}
