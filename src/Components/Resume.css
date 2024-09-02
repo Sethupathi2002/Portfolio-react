@@ -53,22 +53,21 @@
 
 @keyframes bounce {
     0% {
-        transform: translateY(0);
+        transform: translateY(-10px);
     }
 
     50% {
-        transform: translateY(-10px);
+        transform: translateY(0);
         /* Move 10px up */
     }
 
     100% {
-        transform: translateY(0);
+        transform: translateY(10px);
         /* Return to original position */
     }
 }
 
 .resume-view-button,
 .resume-download-button {
-    animation: bounce 1.2s infinite;
-    /* Adjust duration and repetition */
+    animation: bounce 1.5s infinite;
 }
