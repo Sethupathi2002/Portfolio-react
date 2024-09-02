@@ -53,17 +53,26 @@
 
 @keyframes bounce {
     0% {
-        transform: translateY(-10px);
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-10PX);
+        /* Move 10px up */
     }
 
     50% {
         transform: translateY(0);
-        /* Move 10px up */
+        /* Return to original position */
+    }
+
+    75% {
+        transform: translateY(10px);
+        /* Move 10px down */
     }
 
     100% {
-        transform: translateY(10px);
-        /* Return to original position */
+        transform: translateY(0);
     }
 }
 
