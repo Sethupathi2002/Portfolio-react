@@ -57,7 +57,7 @@
     }
 
     25% {
-        transform: translateY(-10PX);
+        transform: translateY(-5px);
         /* Move 10px up */
     }
 
@@ -67,7 +67,7 @@
     }
 
     75% {
-        transform: translateY(10px);
+        transform: translateY(5px);
         /* Move 10px down */
     }
 
@@ -78,5 +78,6 @@
 
 .resume-view-button,
 .resume-download-button {
-    animation: bounce 1.5s infinite;
+    animation: bounce 1s infinite;
+    will-change: transform;
 }
