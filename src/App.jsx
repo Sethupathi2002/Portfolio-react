@@ -8,17 +8,35 @@ import Resume from './Components/Resume'
 import Contact from './Components/Contact'
 import Footer from './Components/Footer'
 
-function App() {
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
+function App() {
   return (
-    <>
+    <Router>
       <NavBar />
-      <About />
-      <Resume />
-      <Contact />
-      <Footer />
-    </>
-  )
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <div id="about-section">
+                <About />
+              </div>
+              <div id="resume-section">
+                <Resume />
+              </div>
+              <div id="contact-section">
+                <Contact />
+              </div>
+              <Footer />
+            </>
+          }
+        />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

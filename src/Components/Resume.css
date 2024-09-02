@@ -50,3 +50,25 @@
     color: white;
     transition: 0.3s ease-in;
 }
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+        /* Move 10px up */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Return to original position */
+    }
+}
+
+.resume-view-button,
+.resume-download-button {
+    animation: bounce 1.2s infinite;
+    /* Adjust duration and repetition */
+}

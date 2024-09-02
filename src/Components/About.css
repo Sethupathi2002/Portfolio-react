@@ -32,7 +32,6 @@
     padding: 12px 18px;
     border-radius: 13px;
     border: none;
-    background-color: #e45c1d;
     background-color: #f86724;
     color: var(--text-color);
     cursor: pointer;
@@ -42,10 +41,9 @@
 }
 
 .about-button:hover {
-    background-color: #fa844d;
     box-shadow: 5px 5px 8px white;
     transition: 0.4s ease-in-out;
-    background-color: #cc480b;
+    background-color: #ff5100;
 }
 
 
@@ -83,5 +81,5 @@
     background-color: rgb(153, 148, 148);
     box-shadow: 5px 5px 8px black;
     transition: 0.5s ease-in;
-    background-color: #0c90bb;
+    background-color: #b9d7e0;
 }
