@@ -63,6 +63,43 @@
     margin-bottom: 50px;
 }
 
+
+@media (max-width : 1300px) {
+    .about-skills-grid {
+        grid-template-columns: repeat(5, 1fr);
+        /* Adjust the number of columns */
+        width: 45%;
+        /* Increase the width to accommodate wrapping */
+        gap: 45px;
+        /* Adjust gap if needed */
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .about-skills-grid {
+        grid-template-columns: repeat(4, 1fr);
+        width: 60%;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+        width: 90%;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 10px;
+    }
+}
+
 .skills-container img {
     width: 100%;
     height: auto;
