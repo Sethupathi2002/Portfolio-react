@@ -1,3 +1,5 @@
+/* NavBar CSS */
+
 .nav-bar-parent {
     display: flex;
     justify-content: space-between;
@@ -5,17 +7,16 @@
     padding: 10px;
     position: relative;
     margin: 0;
-    /* Remove left and right margins */
 }
 
-/* Navigation bar title */
+/* NavBar Title */
 .nav-bar-title {
     font-size: 24px;
     font-weight: bold;
     flex-shrink: 0;
 }
 
-/* Navigation bar list */
+/* NavBar List */
 .nav-bar-list {
     display: flex;
     justify-content: flex-end;
@@ -45,18 +46,20 @@
 /* Mobile Styles */
 @media (max-width: 768px) {
     .nav-bar-parent {
-        justify-content: space-around;
+        justify-content: space-between;
         padding: 0;
-        /* Remove padding */
+        /* Remove padding on mobile */
+    }
+
+    .nav-bar-title {
         margin: 0;
-        /* Remove left and right margins */
+        /* Remove margin on mobile */
     }
 
     .nav-bar-title img {
         width: 100px;
         /* Adjust the size of the image for mobile */
-        transition: width 0.3s ease;
-        /* Smooth transition for resizing */
+        transition: width 0.5s ease;
     }
 
     .nav-bar-list {
@@ -64,14 +67,12 @@
         flex-direction: column;
         position: absolute;
         top: 50px;
-        right: 0;
-        /* Align to the right edge */
+        right: 10px;
         background-color: #333;
         border-radius: 5px;
         padding: 10px;
         z-index: 1;
         width: 200px;
-        /* Adjust the width as needed */
     }
 
     .nav-bar-list.open {
@@ -85,6 +86,8 @@
         color: white;
         font-size: 30px;
         cursor: pointer;
+        margin-left: auto;
+        /* Align to the right */
     }
 
     .nav-bar-toggle:hover {

@@ -11,12 +11,31 @@
 
 .about-name {
     color: #FC6119;
+    display: inline-block;
+    /* Keeps it inline but allows for block behavior in mobile view */
 }
 
 .about-heading {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 15px;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .about-heading {
+        font-size: 2rem;
+        /* Adjust font size for mobile view if needed */
+        text-align: left;
+        /* Align text to the left on mobile */
+    }
+
+    .about-name {
+        display: block;
+        /* Forces the <span> to break onto a new line */
+        margin-top: 10px;
+        /* Optional: Adds space above the <span> */
+    }
 }
 
 .about-content-para {
@@ -49,6 +68,8 @@
 
 .about-skills-heading {
     margin-bottom: 2rem;
+    text-align: left;
+    /* Align skills heading to the left */
 }
 
 .about-skills-grid {
@@ -84,6 +105,18 @@
         width: 90%;
         gap: 20px;
     }
+
+    .about-heading {
+        font-size: 2rem;
+        /* Adjust font size for mobile view if needed */
+        text-align: left;
+        /* Align text to the left on mobile */
+    }
+
+    .about-name {
+        display: block;
+        /* Forces the <span> to break onto a new line */
+    }
 }
 
 /* Extra Small Screens */
@@ -95,6 +128,7 @@
     }
 }
 
+/* Hide about-image on mobile and tablet sizes */
 .about-image {
     display: block;
 }
@@ -102,36 +136,18 @@
 @media (max-width: 1024px) {
     .about-image {
         display: none;
+        /* Hide the image on tablet and smaller screens */
     }
 
     .about-parent {
         flex-direction: column;
-        align-items: center;
-        /* Center the items */
+        align-items: flex-start;
     }
 
     .about-content {
-        margin-left: 0;
-        /* Remove left margin */
-        margin-right: 0;
-        /* Remove right margin */
-        padding-left: 0;
-        /* Remove padding-left */
-        padding-right: 0;
-        /* Remove padding-right */
+        margin-left: 1rem;
         width: 100%;
-        /* Full width */
-        text-align: center;
-        /* Center text */
-    }
-
-    .about-skills {
-        padding-left: 0;
-        /* Remove padding-left */
-        padding-right: 0;
-        /* Remove padding-right */
-        text-align: center;
-        /* Center text */
+        /* Full width on smaller screens */
     }
 }
 
@@ -152,8 +168,4 @@
     box-shadow: 5px 5px 8px black;
     transition: 0.5s ease-in;
     background-color: #b9d7e0;
-}
-
-.skill-logo:nth-child(3) {
-    transform: scale(50px);
 }
