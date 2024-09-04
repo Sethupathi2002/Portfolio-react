@@ -27,10 +27,14 @@ li {
 body {
     margin: 0 130px;
     color: var(--text-color);
-    /* background: var(--bg-color); */
-    background-image: url("./assets//bg-image2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
     background: var(--bg-color);
+    background-size: cover;
+    background-attachment: fixed;
 
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0 10px;
+    }
 }

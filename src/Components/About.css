@@ -1,19 +1,16 @@
 .about-parent {
-    margin: 0 0;
-}
-
-.about-parent {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.about-name {
-    color: #FC6119;
+    margin: 0;
 }
 
 .about-content {
     margin-left: 55px;
+}
+
+.about-name {
+    color: #FC6119;
 }
 
 .about-heading {
@@ -46,7 +43,6 @@
     background-color: #ff5100;
 }
 
-
 .about-skills {
     margin-top: 50px;
 }
@@ -63,48 +59,72 @@
     margin-bottom: 50px;
 }
 
-
-@media (max-width : 1300px) {
+/* Large Screens */
+@media (max-width: 1300px) {
     .about-skills-grid {
-        grid-template-columns: repeat(5, 1fr);
-        /* Adjust the number of columns */
+        grid-template-columns: repeat(5, minmax(0, 1fr));
         width: 45%;
-        /* Increase the width to accommodate wrapping */
         gap: 45px;
-        /* Adjust gap if needed */
     }
 }
 
-
+/* Medium Screens */
 @media (max-width: 1024px) {
     .about-skills-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, minmax(0, 1fr));
         width: 60%;
         gap: 50px;
     }
 }
 
+/* Small Screens */
 @media (max-width: 768px) {
     .about-skills-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         width: 90%;
         gap: 20px;
     }
 }
 
+/* Extra Small Screens */
 @media (max-width: 480px) {
     .about-skills-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         width: 100%;
         gap: 10px;
+    }
+}
+
+/* Hide about-image on mobile and tablet sizes */
+.about-image {
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .about-image {
+        display: none;
+        /* Hide the image on tablet and smaller screens */
+    }
+
+    .about-parent {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-content {
+        padding-left: 1rem;
+        width: 100%;
+        /* Full width on smaller screens */
+    }
+
+    .about-skills {
+        padding-left: 1rem;
     }
 }
 
 .skills-container img {
     width: 100%;
     height: auto;
-    width: 100px;
-    height: 100px;
     object-fit: contain;
 }
 
