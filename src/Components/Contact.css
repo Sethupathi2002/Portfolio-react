@@ -86,8 +86,8 @@
     }
 
     .contact-form {
-        width: 480px;
-        /* Reduced width for tablets */
+        width: 400px;
+        /* Further reduced width for tablets */
     }
 
     .contact-form input,

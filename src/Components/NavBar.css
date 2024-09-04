@@ -4,14 +4,18 @@
     align-items: center;
     padding: 10px;
     position: relative;
+    margin: 0;
+    /* Remove left and right margins */
 }
 
+/* Navigation bar title */
 .nav-bar-title {
     font-size: 24px;
     font-weight: bold;
     flex-shrink: 0;
 }
 
+/* Navigation bar list */
 .nav-bar-list {
     display: flex;
     justify-content: flex-end;
@@ -42,10 +46,10 @@
 @media (max-width: 768px) {
     .nav-bar-parent {
         justify-content: space-around;
+        padding: 0;
+        /* Remove padding */
         margin: 0;
-        margin-top: 2px;
-        margin-left: 0.1rem;
-        /* Adjust to your preference */
+        /* Remove left and right margins */
     }
 
     .nav-bar-title img {
@@ -60,7 +64,8 @@
         flex-direction: column;
         position: absolute;
         top: 50px;
-        right: 10px;
+        right: 0;
+        /* Align to the right edge */
         background-color: #333;
         border-radius: 5px;
         padding: 10px;

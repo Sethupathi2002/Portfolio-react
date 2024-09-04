@@ -106,16 +106,32 @@
 
     .about-parent {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        /* Center the items */
     }
 
     .about-content {
-        padding-left: 0.1rem;
+        margin-left: 0;
+        /* Remove left margin */
+        margin-right: 0;
+        /* Remove right margin */
+        padding-left: 0;
+        /* Remove padding-left */
+        padding-right: 0;
+        /* Remove padding-right */
         width: 100%;
+        /* Full width */
+        text-align: center;
+        /* Center text */
     }
 
     .about-skills {
-        padding-left: 0.1rem;
+        padding-left: 0;
+        /* Remove padding-left */
+        padding-right: 0;
+        /* Remove padding-right */
+        text-align: center;
+        /* Center text */
     }
 }
 
