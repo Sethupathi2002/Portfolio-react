@@ -95,7 +95,6 @@
     }
 }
 
-/* Hide about-image on mobile and tablet sizes */
 .about-image {
     display: block;
 }
@@ -103,7 +102,6 @@
 @media (max-width: 1024px) {
     .about-image {
         display: none;
-        /* Hide the image on tablet and smaller screens */
     }
 
     .about-parent {
@@ -112,13 +110,12 @@
     }
 
     .about-content {
-        padding-left: 1rem;
+        padding-left: 0.1rem;
         width: 100%;
-        /* Full width on smaller screens */
     }
 
     .about-skills {
-        padding-left: 1rem;
+        padding-left: 0.1rem;
     }
 }
 
@@ -139,4 +136,8 @@
     box-shadow: 5px 5px 8px black;
     transition: 0.5s ease-in;
     background-color: #b9d7e0;
+}
+
+.skill-logo:nth-child(3) {
+    transform: scale(50px);
 }

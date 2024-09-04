@@ -5,8 +5,6 @@
     min-height: 70vh;
 }
 
-
-
 .contact-form {
     background-image: url("../assets/bg-image2.jpg");
     background-position: center;
@@ -16,7 +14,8 @@
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     padding: 20px;
-    width: 650px;
+    width: 550px;
+    /* Reduced width for larger screens */
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -48,7 +47,6 @@
     box-shadow: 0 0 5px #0a094b;
 }
 
-
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
     color: rgba(0, 0, 0, 0.6);
@@ -79,4 +77,48 @@
     text-align: start;
     margin-bottom: 30px;
     color: #ccc;
+}
+
+/* Mobile and Tablet Styles */
+@media (max-width: 1024px) {
+    .contact-component {
+        max-width: 90%;
+    }
+
+    .contact-form {
+        width: 480px;
+        /* Reduced width for tablets */
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-component {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .contact-form {
+        width: 90%;
+        /* Further reduced width for mobile */
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        width: 100%;
+        /* Full width for extra small screens */
+    }
 }
