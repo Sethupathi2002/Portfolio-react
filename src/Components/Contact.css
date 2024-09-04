@@ -106,6 +106,8 @@
     .contact-form {
         width: 90%;
         /* Further reduced width for mobile */
+        margin: 10px 0;
+        /* Reduce top and bottom margin for mobile */
     }
 
     .contact-form input,
@@ -120,5 +122,7 @@
     .contact-form {
         width: 100%;
         /* Full width for extra small screens */
+        margin: 5px 0;
+        /* Further reduce top and bottom margin for extra small screens */
     }
 }
