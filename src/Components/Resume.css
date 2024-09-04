@@ -1,7 +1,7 @@
 .resume-body {
     background-color: transparent;
     backdrop-filter: blur(10px);
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .resume-action-buttons {
@@ -43,13 +43,15 @@
 .resume-download-button:hover {
     background-color: #FC6119;
     color: white;
-    transition: 0.3s ease-in;
+    box-shadow: 4px 4px 7px black;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in, box-shadow 0.3s ease-in;
 }
 
 .resume-view-button:hover {
     background-color: #FC6119;
     color: white;
-    transition: 0.3s ease-in;
+    box-shadow: 4px 4px 7px black;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in, box-shadow 0.3s ease-in;
 }
 
 @keyframes bounce {
