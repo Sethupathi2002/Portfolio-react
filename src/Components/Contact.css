@@ -1,3 +1,7 @@
+.contact-division {
+    margin-top: 20px;
+}
+
 .contact-component {
     display: flex;
     justify-content: center;
@@ -75,7 +79,6 @@
 
 .contact-para {
     text-align: start;
-    margin-bottom: 30px;
     color: #ccc;
 }
 

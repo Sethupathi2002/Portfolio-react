@@ -58,7 +58,7 @@ function About() {
     }
 
     return (
-        <div>
+        <div className='about-division'>
             <div className='about-parent'>
                 <div className='about-content'>
                     <h2 className='about-heading'>Hi , I'm <span className='about-name'>{text}</span></h2>

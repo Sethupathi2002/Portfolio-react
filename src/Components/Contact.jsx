@@ -10,7 +10,7 @@ function Contact() {
     };
 
     return (
-        <div>
+        <div className='contact-division'>
             <h2 className='contact-heading'>CONTACT :</h2>
             <p className='contact-para'>Get in touch or shoot me an email directly on <b>vjsethu2002@gmail.com</b></p>
             <div className='contact-component'>
