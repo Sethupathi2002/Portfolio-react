@@ -83,11 +83,11 @@
 @media (max-width: 1024px) {
     .contact-component {
         max-width: 90%;
+        margin: 5px 0;
     }
 
     .contact-form {
         width: 400px;
-        /* Further reduced width for tablets */
     }
 
     .contact-form input,
@@ -105,9 +105,7 @@
 
     .contact-form {
         width: 90%;
-        /* Further reduced width for mobile */
-        margin: 10px 0;
-        /* Reduce top and bottom margin for mobile */
+        margin: 5px 0;
     }
 
     .contact-form input,
