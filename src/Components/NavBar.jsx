@@ -39,9 +39,33 @@ function NavBar() {
             </button>
             <div className={`nav-bar-list ${isOpen ? 'open' : ''}`}>
                 <ul>
-                    <li><NavLink to="/" activeClassName="active" exact onClick={closeMenu}>Home</NavLink></li>
-                    <li><NavLink to="/resume" activeClassName="active" onClick={closeMenu}>Resume</NavLink></li>
-                    <li><NavLink to="/contact" activeClassName="active" onClick={closeMenu}>Contact</NavLink></li>
+                    <li>
+                        <NavLink
+                            to="/"
+                            className={({ isActive }) => isActive ? 'active' : ''}
+                            onClick={closeMenu}
+                        >
+                            Home
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to="/resume"
+                            className={({ isActive }) => isActive ? 'active' : ''}
+                            onClick={closeMenu}
+                        >
+                            Resume
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to="/contact"
+                            className={({ isActive }) => isActive ? 'active' : ''}
+                            onClick={closeMenu}
+                        >
+                            Contact
+                        </NavLink>
+                    </li>
                 </ul>
             </div>
         </div>

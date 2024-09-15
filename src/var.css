@@ -1,4 +1,8 @@
 :root {
     --text-color: white;
-    --bg-color: linear-gradient(to right, black, grey);
+    --bg-gradient: linear-gradient(to right, black, grey);
+    --bg-color-dark: rgb(22, 20, 20);
+    --bg-color-white: white;
+    --hover-color-dark: black;
+    --hover-color-white: white;
 }

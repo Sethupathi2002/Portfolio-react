@@ -16,6 +16,10 @@
     flex-shrink: 0;
 }
 
+/* Navbar image color change on hover */
+
+
+
 /* NavBar List */
 .nav-bar-list {
     display: flex;
@@ -39,9 +43,6 @@
     color: white;
 }
 
-.nav-bar-list li:hover {
-    color: #FC6119;
-}
 
 /* Mobile Styles */
 @media (max-width: 768px) {
@@ -91,7 +92,6 @@
     }
 
     .nav-bar-toggle:hover {
-        color: #FC6119;
         transition: color 0.2s ease;
     }
 
@@ -113,9 +113,6 @@
         text-align: center;
     }
 
-    .nav-bar-list li:hover {
-        color: #FC6119;
-    }
 }
 
 /* Desktop Styles */
@@ -129,4 +126,33 @@
         justify-content: flex-end;
         align-items: center;
     }
+}
+
+
+/* Common styles for links */
+ul li a {
+    position: relative;
+    text-decoration: none;
+    color: white !important;
+    /* Text color should remain white */
+}
+
+/* Underline effect */
+ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #FC6119;
+    /* Orange underline */
+    transition: width 0.5s ease;
+    margin-top: 5px;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+}
+
+/* Hover effect */
+ul li a:hover::after {
+    width: 100%;
 }

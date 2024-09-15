@@ -27,7 +27,7 @@ li {
 body {
     margin: 0 130px;
     color: var(--text-color);
-    background: var(--bg-color);
+    background: var(--bg-color-dark);
     background-size: cover;
     background-attachment: fixed;
 

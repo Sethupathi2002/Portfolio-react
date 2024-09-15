@@ -1,3 +1,5 @@
+@import url(../var.css);
+
 .about-division {
     margin-top: 20px;
 }
@@ -19,6 +21,35 @@
     display: inline-block;
     /* Keeps it inline but allows for block behavior in mobile view */
 }
+
+.shuffle {
+    position: relative;
+    top: -12px;
+}
+
+.about-content-domain {
+    transition: all 0.5s ease-in-out;
+}
+
+/* About.css */
+
+.about-content-domain {
+    font-size: 2rem;
+    opacity: 0;
+    animation: fadeIn 1.5s infinite forwards ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
 
 .about-heading {
     font-size: 3rem;
@@ -62,7 +93,7 @@
 }
 
 .about-button:hover {
-    box-shadow: 5px 5px 8px white;
+    box-shadow: 5px 5px 8px var(--hover-color-white);
     transition: 0.4s ease-in-out;
     background-color: #ff5100;
 }
@@ -169,7 +200,7 @@
 
 .skill-logo:hover {
     background-color: rgb(153, 148, 148);
-    box-shadow: 5px 5px 8px black;
+    box-shadow: 5px 5px 8px var(--hover-color-white);
     transition: 0.5s ease-in;
     background-color: #b9d7e0;
 }

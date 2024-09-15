@@ -57,14 +57,16 @@ function About() {
         }
     }
 
+
     return (
         <div className='about-division'>
             <div className='about-parent'>
                 <div className='about-content'>
-                    <h2 className='about-heading'>Hi , I'm <span className='about-name'>{text}</span></h2>
-                    <p className='about-content-para'>I am a full stack developer with knowledge of <br />
-                        React and SpringBoot, <br />
-                        Reach out if you'd like to know more!</p>
+                    <h2 className='about-heading'>Hi , <br />
+                        I'm <span className='about-name'>{text}</span></h2><br />
+                    <div className='shuffle'>
+                        <h1 className='about-content-domain'>Full Stack Developer</h1>
+                    </div>
                     <button
                         className='about-button'
                         onClick={handleContactClick}
